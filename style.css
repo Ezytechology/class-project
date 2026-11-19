@@ -1,0 +1,432 @@
+/* Remove default Spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #004691;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 1s;
+}
+
+.nav-links a:hover {
+    background: red;
+}
+
+/* Button */
+.btn {
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+/* background video */
+.bg-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay BG Styling */
+.overlay-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(300deg,
+            rgba(0, 70, 145, 0.85),
+            rgba(0, 70, 145, 0.45),
+            rgba(0, 0, 0, 0.65));
+
+    z-index: -1;
+}
+
+.box div {
+    width: 100%;
+    padding: 20px 9%;
+
+}
+
+/* Dropdown Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 1, 58);
+    z-index: 1000;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+/* Dropdown style */
+.dropdown {
+    position: relative;
+    padding: 25px;
+    list-style: none;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: rgb(0, 1, 58);
+    list-style: none;
+    min-width: 180px;
+    box-shadow: 0.5px 15px blue;
+}
+
+.dropdown-content a {
+    list-style: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+}
+
+.dropdown-content li a:hover {
+    background: blue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Calculator Icon */
+
+.calc-icon {
+    color: #004691;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.calc-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ================= DROPDOWN CALCULATOR ================= */
+
+.calculator-dropdown {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+/* Show dropdown */
+
+.calculator-dropdown.show {
+    display: block;
+    animation: dropDown .3s ease;
+}
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Calculator */
+
+#display {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 10px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.number {
+    background: #0033c0;
+}
+
+.operator {
+    background: #004691;
+    color: white;
+}
+
+.equal {
+    background: #00a651;
+    color: white;
+    grid-column: span 2;
+}
+
+.clear {
+    background: #e63946;
+    color: white;
+    grid-column: span 2;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    color: #004691;
+}
+
+/* Form Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    margin-top: 40px;
+}
+
+.form-container {
+    width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 1, 58);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgb(0, 1, 58);
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: rgb(0, 1, 58);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(0, 2, 95);
+}
+
+/* desktop view */
+@media (min-width:1400px) {
+
+    .card {
+        width: 350px;
+    }
+
+}
+
+/* laptop view */
+@media (max-width:1399px) {
+
+    .card {
+        width: 300px;
+    }
+
+}
+
+/* tab view */
+@media (max-width:991px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+}
+
+/* mobile landscape */
+@media (max-width:767px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+}
+
+/* mobile portrait */
+@media (max-width:575px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
